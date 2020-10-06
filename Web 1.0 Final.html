@@ -5,38 +5,42 @@
   <title>Ryan Cornel - Final - Web 1.0</title>
 
   <style>
-      *{
-      box-sizing: border-box;
-      }
 
     body {
         background-color: #8d93ab;
-        
-    }
-
-    .row {
-        display: flex;
-    }
-
+    }  
     .column {
-        flex-wrap: wrap;
-        padding: 10px;
+        padding: 12px;
+        margin: 10px;
+        border-style: solid;
+        border: #d49a89;
+        border-width: thick;
         
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+        justify-content: space-between;
+        align-items:flex-start;
+
     }
+
+    
     
 </style>
 </head>
 <body>
   
-<div class="row">
+<div class = "column">
         
-    <div class="column">
+    
     <section id="Student Info">
         <h1>Ryan Cornel</h1>
         <p>My favorite color is blue and I wear Thousand Fell laceups.</p>
     </sectio1>
   
-
+    <div class="column">
     <section id="Data-Input">
         <h1>Font Styler</h1>
 
@@ -81,6 +85,21 @@
     
 
   
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js">
+        const display = document.querySelector('#display')
+
+        const inputSize = document.querySelector('#input-size')
+
+        const showSize = document.querySelector('#show-size')
+
+        inputSize.addEventListener('input', handleInput)
+
+        function handleInput() {
+	        const fontSize = inputSize.value + 'px'
+            display.style.fontSize = fontSize
+	        showSize.innerHTML = fontSize
+        
+}
+    </script>
 </body>
 </html> 
