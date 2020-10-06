@@ -3,11 +3,34 @@
 <head>
 
   <title>Ryan Cornel - Final - Web 1.0</title>
-  
-</head>
 
+  <style>
+      *{
+      box-sizing: border-box;
+      }
+
+    body {
+        background-color: #8d93ab;
+        
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex-wrap: wrap;
+        padding: 10px;
+        
+    }
+    
+</style>
+</head>
 <body>
   
+<div class="row">
+        
+    <div class="column">
     <section id="Student Info">
         <h1>Ryan Cornel</h1>
         <p>My favorite color is blue and I wear Thousand Fell laceups.</p>
@@ -34,10 +57,11 @@
         <input id = "input-bg-color" type = "color" value = "#fff" >
 
         <label>Enter Text</label>
-        <textarea id = "enter-text">
+        <textarea id = "enter-text"> </textarea>
     </section>
+    </div>
 
-
+    <div class="column">
     <section>
         <h1 id="Display"> Sample Text </h1>
     </section>
@@ -51,11 +75,11 @@
             }
             </code></pre>
     </section>
+    </div>
+</div>
 
     
-<style>
-    
-</style>
+
   
     <script src="js/scripts.js"></script>
 </body>
