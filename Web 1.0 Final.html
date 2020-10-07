@@ -9,38 +9,34 @@
     body {
         background-color: #8d93ab;
     }  
-    .column {
-        padding: 12px;
-        margin: 10px;
-        border-style: solid;
-        border: #d49a89;
-        border-width: thick;
-        
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        justify-content: space-around;
-        justify-content: space-between;
-        align-items:flex-start;
-
-    }
 
     
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    .item {
+        flex-basis: auto;
+        align-self: flex-end;
+    }
     
 </style>
 </head>
 <body>
   
-<div class = "column">
-        
-    
+    <div class = "container">
     <section id="Student Info">
         <h1>Ryan Cornel</h1>
         <p>My favorite color is blue and I wear Thousand Fell laceups.</p>
     </sectio1>
+    </div>
   
-    <div class="column">
+    <div class="container">
     <section id="Data-Input">
         <h1>Font Styler</h1>
 
@@ -65,11 +61,13 @@
     </section>
     </div>
 
-    <div class="column">
+    <div class="container">
     <section>
         <h1 id="Display"> Sample Text </h1>
     </section>
+    </div>
 
+    <div class="container"></div>
     <section>
         <pre><code>.headline {
             font-size: <span id="show-size">16</span>px;
@@ -80,7 +78,7 @@
             </code></pre>
     </section>
     </div>
-</div>
+
 
     
 
